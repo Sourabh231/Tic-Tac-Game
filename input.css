@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,600;1,700&family=Oswald:wght@300;700&family=Poppins:ital,wght@1,100;1,200&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+ nav{
+    background-color: rgb(37,9,37);
+    color: white;
+    height: 10vh;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat' ;
+ }
+ 
+ nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    background-color: blueviolet;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Montserrat' ;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(225, 212, 238);
+    cursor: pointer;
+}
+
+.gameInfo{
+    margin-top: 70px;
+    padding: 0 30px;
+    margin-left: 80px;
+    font-family:'Ostwald',cursive;
+}
+
+.border-top{
+   border-top: 0;
+}
+
+.border-left{
+    border-left: 0;
+}
+
+.border-right{
+     border-right: 0;
+}
+
+.border-bottom{
+      border-bottom: 0;
+} 
+
+.info{
+    font-size: 30px;
+}
+
+#restart{
+    margin:0 15px;
+    margin-top:25px;
+    padding: 15px ;
+    background-color: rgb(206, 181, 229);
+    cursor: pointer;
+    color: black;
+}
+
+#restart:hover{
+    background-color: brown;
+}
+
+@media screen and (max-width:950px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #restart{
+        padding: 15px;
+    }
+
+}
